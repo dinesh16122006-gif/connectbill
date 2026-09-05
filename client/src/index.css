@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900;
+  }
+}
+
+/* Custom styles for high-grade financial / billing UI */
+.stat-card-gradient-blue {
+  background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+}
+
+.stat-card-gradient-emerald {
+  background: linear-gradient(135deg, #059669 0%, #047857 100%);
+}
+
+.stat-card-gradient-amber {
+  background: linear-gradient(135deg, #d97706 0%, #b45309 100%);
+}
+
+.stat-card-gradient-rose {
+  background: linear-gradient(135deg, #e11d48 0%, #be123c 100%);
+}
+
+.stat-card-gradient-purple {
+  background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%);
+}
+
+/* Print styles for digital receipts */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #printable-receipt, #printable-receipt * {
+    visibility: visible;
+  }
+  #printable-receipt {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    box-shadow: none;
+    border: none;
+  }
+  .no-print {
+    display: none !important;
+  }
+}

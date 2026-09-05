@@ -1,0 +1,17 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# Single Page Application (SPA) redirect rule
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Optional API proxy: route /api calls to your deployed backend (e.g., on Render or Railway)
+# Uncomment and update when backend is deployed:
+# [[redirects]]
+#   from = "/api/*"
+#   to = "https://your-connectbill-backend.onrender.com/api/:splat"
+#   status = 200
+#   force = true

@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Environment Secrets
+.env
+.env.local
+.env.*.local
+
+# Production Builds
+dist/
+build/
+
+# Logs and Debugging
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# Editor & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# In-memory MongoDB cache (if created locally)
+.mongodb-memory-server/
