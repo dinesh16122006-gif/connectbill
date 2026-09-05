@@ -25,3 +25,6 @@ Thumbs.db
 
 # In-memory MongoDB cache (if created locally)
 .mongodb-memory-server/
+
+# Local Netlify folder
+.netlify
